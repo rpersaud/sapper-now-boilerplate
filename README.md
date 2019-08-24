@@ -16,12 +16,12 @@ Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
 
-## Boilerplate setup
+### boilerplate setup
 
 This template was installed with yarn, deploys to zeit's now, hosted on gitlab with auto enabled cicd.
 Built with node v10.15.0 on Windows 10 Home Edition. The following files were touched -  
 
-now.json
+```now.json
 .nowignore
 .gitignore
 rollup.config.js
@@ -29,17 +29,17 @@ rollup.config.js
 /src/server
 cache/
 package.json - rollup-json
+```
+### cypress installation on windows
 
-# cypress installation on windows
- 
-mkdir cache (directory root level)
+```mkdir cache (directory root level)
 $env:CYPRESS_CACHE_FOLDER="cache/"
 npx cypress install
-
-# now 
+```
+### now cli
 
 see https://zeit.co/docs on how to setup. You will login using the now cli. 
-For gitlab, and cypress, you will need to set your now token NOW_TOKEN. 
+For gitlab, and cypress, you will need to set your now token ```NOW_TOKEN```. 
  Tokens are typically set somewhere here - ~/.now/auth.json
 
 ## Structure
